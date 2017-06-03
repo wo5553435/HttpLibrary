@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable
+        name="AnimateTextView"
+        >
+        <attr name="start"
+            format="integer"/>
+        <attr name="end"
+            format="integer"/>
+        <attr name="textSize"
+            format="integer"
+            />
+        <attr name="textColor"
+            format="reference"/>
+        <attr name="duration"
+            format="integer"/>
+        <attr name="mode"
+            >
+            <enum name="cashout" value="2"/>
+            <enum name="animate" value="3"/>
+            <enum name="downcount" value="1"/>
+        </attr>
+        <attr name="textonleft" format="string"/>
+        <attr name="textonright" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="IndexNumberView">
+        <attr name="text" format="integer"/>
+        <attr name="adddrawable" format="reference"/>
+        <attr name="reducedrawable" format="reference"/>
+        <attr name="drawablesize" format="integer"/>
+        <attr name="textpadding" format="integer"/>
+        <attr name="text_Size" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="minum" format="integer"/>
+    </declare-styleable>
+</resources>

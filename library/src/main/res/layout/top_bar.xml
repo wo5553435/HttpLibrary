@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topBar"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/transparent" >
+	
+    <!-- 文字标题  -->
+    <TextView
+        android:id="@+id/tvTopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text=""
+        android:visibility="visible"/>
+    
+ 	<!-- 头部左侧文字选项按钮 -->
+    <Button
+        android:id="@+id/btnTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"       
+        android:layout_marginLeft="@dimen/top_bar_margin_left_right"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" 
+        android:text="####"
+        android:visibility="gone" />
+    
+    <!-- 头部右侧文字选项按钮 -->
+    <Button
+        android:id="@+id/btnTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"        
+        android:layout_marginRight="@dimen/top_bar_margin_left_right"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" 
+        android:text="####"
+        android:visibility="gone" />
+            
+</RelativeLayout>

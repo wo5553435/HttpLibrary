@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" 
+    >
+
+	<FrameLayout
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<SurfaceView
+		    android:id="@+id/preview_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+		<com.pigcms.syt.capture.ViewfinderView
+		    android:id="@+id/viewfinder_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"/>
+
+		<TextView
+		    android:id="@+id/status_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:background="@color/transparent"
+			android:text="@string/msg_default_status"
+			android:textColor="@color/status_text"
+			android:layout_marginBottom="115dp"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="bottom|center_horizontal"
+			android:layout_marginBottom="50dp"
+			>
+			<TextView
+				android:id="@+id/btn_capture_input"
+				android:layout_gravity="bottom|center_horizontal"
+				android:background="@drawable/circle_round_alpha"
+				android:textColor="@color/status_text"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:layout_height="30dp"
+				android:padding="5dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginLeft="30dp"
+				android:textSize="14sp"
+				android:text="手工输入识别码"/>
+			<LinearLayout
+				android:id="@+id/layout_capture_select"
+				android:layout_gravity="bottom|center_horizontal"
+				android:background="@drawable/circle_round_alpha"
+				android:orientation="horizontal"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="30dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:layout_marginRight="30dp"
+				android:layout_marginLeft="30dp"
+				android:gravity="center"
+				android:padding="5dp"
+				>
+				<TextView
+					android:id="@+id/btn_capture_select"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:minHeight="80dp"
+					android:maxWidth="110dp"
+					android:maxLines="1"
+					android:ellipsize="end"
+					android:paddingLeft="8dp"
+					android:textColor="@color/status_text"
+					android:textSize="14sp"
+					android:text="选择门店"/>
+				<ImageView
+					android:id="@+id/icon_select"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:scaleType="fitCenter"
+					android:paddingRight="2dp"
+					android:src="@drawable/icon_select_pull"
+					/>
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+
+		<ImageButton
+		    android:id="@+id/btnCameraLight"
+		    android:layout_width="90dp"
+		    android:layout_height="90dp"
+			android:layout_marginTop="30dp"
+			android:background="@color/transparent"
+		    android:src="@drawable/selector_falsh_switch"
+			android:scaleType="fitCenter"
+		    android:layout_gravity="top|right"
+		    />
+	<include layout="@layout/top_bar" />
+	</FrameLayout>
+</LinearLayout>
+
